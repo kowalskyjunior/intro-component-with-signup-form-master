@@ -1,0 +1,325 @@
+/*### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%)
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    padding: 10rem;
+    color: white;
+}
+
+article, h1{
+    font-size: 40px;   
+    
+}
+
+h1{
+    width: 25rem;
+}
+
+.sub-text{
+    font-size: 15px;
+    width: 30rem;
+}
+
+
+.title{
+    line-height: 45px;
+    margin-bottom: 1.9rem;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 5rem;
+    position: relative;
+    left: -100px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 30rem;
+    height: 24rem;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.356);
+}
+
+.try-free{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0.1rem;
+    margin-bottom: 1.3rem;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+}
+
+.btn-try-free{
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.seven-days{
+    font-weight: 900;
+}
+
+input{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: solid 0.9px;
+}
+
+form, input{
+    padding: 10px;
+}
+
+.btn-free{
+    height: 2.9rem;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0px 5px 1px 0px hsl(153, 55%, 46%) ;
+    cursor: pointer;
+}
+
+.btn-free:hover{
+    background-color: hsl(155, 54%, 44%);
+    transition: 1s;
+}
+
+.terms{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+span{
+    justify-content: center;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+}
+
+.icon-error-name{
+    position: absolute;
+    right: 50px;
+    margin-top: 10px;
+    display: none;
+    top: 6.4rem;
+}
+
+.icon-error-last-name{
+    position: absolute;
+    right: 50px;
+    margin-top: 10px;
+    display: none;
+    top: 10.5rem;
+}
+
+.icon-error-email{
+    position: absolute;
+    right: 50px;
+    margin-top: 10px;
+    display: none;
+    top: 14.5rem;
+}
+
+.icon-error-password{
+    position: absolute;
+    right: 50px;
+    margin-top: 11px;
+    display: none;
+    top: 18.4rem;
+}
+
+.input-name-error{
+    border: red solid 0.9px;
+    
+}
+
+.input-last-name-error{
+    border: red solid 0.9px;
+}
+
+.input-email-error{
+    border: red solid 0.9px;
+}
+
+.input-password-error{
+    border: red solid 0.9px;
+}
+
+.input-name-sucess{
+    border: hsl(153, 55%, 46%) solid 0.9px;
+    
+}
+
+.input-last-name-sucess{
+    border: hsl(153, 55%, 46%) solid 0.9px;
+}
+
+.input-email-sucess{
+    border:hsl(153, 55%, 46%) solid 0.9px;
+}
+
+.input-password-sucess{
+    border: hsl(153, 55%, 46%) solid 0.9px;
+}
+.input-name{
+    border: rgba(0, 0, 0, 0.185) solid 0.9px;
+}
+
+.input-last-name{
+    border: rgba(0, 0, 0, 0.185) solid 0.9px;
+}
+
+.input-email{
+    border: rgba(0, 0, 0, 0.185) solid 0.9px;
+}
+
+.input-password{
+    border: rgba(0, 0, 0, 0.185) solid 0.9px;
+}
+
+@media (max-width: 915px){
+        body{
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }    
+        article, h1{
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 110px;
+            margin-left: -0px;
+        }
+        .sub-text{
+            width: 300px;
+            margin: 0 auto;
+            
+        }
+        .try-free{
+          width: 300px;
+          height: 80px;
+        margin-top: 20px;
+        }
+        .btn-try-free{
+           width: 200px;
+           
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        aside{
+            bottom: 150px;  
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-left: 100px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .icon-error-name{
+            position: absolute;
+            left: 270px;
+            top: 26.7%;
+            display: none;
+        }
+        .icon-error-last-name{
+            left: 270px;
+            top: 38.7%;
+            display: none;
+        }
+        .icon-error-email{
+            left: 270px;
+            top: 50%;
+            display: none;
+        }
+        .icon-error-password{
+            left: 270px;
+            top: 62%;
+            display: none;
+        }
+        .btn-free{
+            font-size: 16px;
+        }
+        .services{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .attribution{
+            top: 700px;
+            justify-content: center;
+            left: 90px;
+            display: none;
+        }
+    }
